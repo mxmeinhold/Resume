@@ -10,3 +10,7 @@ clean:
 
 purge: clean
 	rm -rf Resume.pdf
+	git clean -fX
+
+publish: default
+	cp Resume.pdf Meinhold_Resume_`date +"%m_%d_%Y"`.pdf
