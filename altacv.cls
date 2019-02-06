@@ -145,7 +145,7 @@
   \smallskip
   \textbf{\color{accent}#2}\par
   \smallskip
-  {\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#3}%
+  \ifstrequal{#3}{}{}{\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#3}%
   \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}\par}
   \medskip
 }
@@ -257,3 +257,6 @@
   \color{body}
   \raggedright
 }
+
+
+\newcommand{\project}[2]{\cvevent{#1}{\href{#2}{\githubsymbol\hspace{1ex}#2}}{}{}}
