@@ -91,42 +91,46 @@
 %% You can always just use \marginpar{...} if you do
 %% not need to align the top of the contents to any
 %% \cvsection title in the "main" bar.
+\vspace{.65\baselineskip}
 \cvsection{Education}
 \cvevent{Rochester Institute of Technology}{Computer Science B.S.}{2017 -- 2021}{}
 
 \cvsection{Experience}
-\cvevent{Asexual Community Census}{Data Analyst}{August 2017 -- Current}{}
-Assist in processing and analysis, survey design, and report creation for the annual Asexual Community Survey.
+
+\cvevent{Emergent Space Technologies}{Software Intern}{June 2016 -- August 2016}{NASA Goddard Spaceflight Center}
+Built a GPS solution in MATLAB from the ground up. Analyzed GPS distortion as a factor of the International Space Station's structure for NASA's Global Ecosystems Dynamics Investigation LIDAR project.
+
+%\cvevent{Asexual Community Census}{Data Analyst}{August 2017 -- Current}{}
+%Assist in processing and analysis, survey design, and report creation for the annual Asexual Community Survey.
 
 \divider
 
 \cvevent{Classroom Technology Support}{AV Technician}{January 2019 -- Current}{Rochester Institute of Technology}
 Conduct installation, configuration, maintenance, and repair of classroom and auditorium AV systems.
 \cvevent{}{AV Responder}{January 2018 -- Current}{Rochester Institute of Technology}
-Handle customer support for RIT classroom and auditorium AV systems, including general maintenance and immediate issue resolution
+Handle customer support for RIT classroom and auditorium AV systems, including general maintenance and immediate issue resolution.
 
-\divider
-
-\cvevent{Emergent Space Technologies}{Software Intern}{June 2016 -- August 2016}{NASA Goddard Spaceflight Center}
-Built a GPS solution in MATLAB from the ground up. Analyzed GPS distortion as a factor of ISS structure for the NASA GEDI project.
+%\divider
 
 \cvsection{Projects}
 
-\project{Database Execution and Deletion Administrative Self Service}{https://github.com/ComputerScienceHouse/DEaDASS}
-Created a system to allow automatic database management for multiple database servers of various types via a REST API in Java with Spring.
+\project{External Accounts Connector}{https://github.com/ComputerScienceHouse/eac}
+Built a broker in Python using Flask that allows Computer Science House members to associate their LDAP account with various third-party OAuth 2.0 identities and automate related management actions.
+
+\divider
+
+\project{Database Execution and Deletion Administrative Self-Service}{https://github.com/ComputerScienceHouse/DEaDASS}
+Created a self-service application to allow users to automatically provision and manage both SQL and NoSQL databases. Provides a RESTful API using Java with Spring Boot.
 
 \divider
 
 \project{Quotefault Slack Bot}{https://github.com/mxmeinhold/csh-quotefault-bot}
-Developed an API to handle a Slack command for Computer Science House's (CSH) Slack workspace.
-Allows interacting with CSH service Quotefault from within Slack via the Quotefault API.
-Built in Python using Flask.
+Developed a Slack bot for Quotefault, a member quote database for Computer Science House. Allows interacting with the service via its associated REST API and utilizes natural language processing techniques to create new views into the data.
 
 \divider
 
 \project{ThemeSwitcher}{https://github.com/mxmeinhold/CSHThemeSwitcher}
-Built a service for saving a user's Bootstrap theme preference and applying it to internal CSH services.
-Built using AngularJS and Bootstrap for front end and NodeJS Express for routing.
+Implemented a solution for storing and applying a global stylesheet preference for each user across various internal microservices. Built using AngularJS and Node.js with Express.
 
 %\divider
 %
