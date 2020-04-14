@@ -259,4 +259,10 @@
 }
 
 
-\newcommand{\project}[2]{\cvevent{#1}{\href{#2}{\githubsymbol\hspace{1ex}#2}}{}{}}
+\newcommand{\project}[2]{%
+  \smallskip
+  {\large\color{emphasis}#1\par}
+  \smallskip
+  \textbf{\color{accent}\href{#2}{\githubsymbol\hspace{1ex}#2}}\par
+  \medskip
+}
