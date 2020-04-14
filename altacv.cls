@@ -153,6 +153,16 @@
   \medskip
 }
 
+\newcommand{\sidebarevent}[3]{%
+  \smallskip
+  {\large\color{emphasis}#1\par}
+  \smallskip
+  \textbf{\color{accent}#2}\par
+  \smallskip
+  \ifstrequal{#3}{}{}{\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#3}\par}
+  \medskip
+}
+
 \newcommand{\cvachievement}[3]{%
   \begin{tabularx}{\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
   \multirow{2}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2}\\
