@@ -96,29 +96,32 @@
 
 \newcommand{\makecvheader}{%
   \begingroup
-    \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
+%    \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
     \raggedright\color{emphasis}%
-    {\Huge\bfseries\MakeUppercase{\@name}\par}
+    \vspace{1.5em}
+        {\fontsize{30}{9}\bfseries\MakeUppercase{\@name}\par}
+    %\vspace{-.87em}
+    \vspace{-9pt}
 %    \medskip
 %    {\large\bfseries\color{accent}\@tagline\par}
 %    \medskip
 %    {\footnotesize\bfseries\@personalinfo\par}
-    \ifdef{\@photodiameter}{%
-    \end{minipage}\hfill%
-    \begin{minipage}{\@photodiameter}
-    \if@normalphoto
-      \includegraphics[width=\linewidth]{\@photo}
-    \else
-      \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
-    \fi%
-    \end{minipage}\par}{}%
+%    \ifdef{\@photodiameter}{%
+%    \end{minipage}\hfill%
+%    \begin{minipage}{\@photodiameter}
+%    \if@normalphoto
+%      \includegraphics[width=\linewidth]{\@photo}
+%    \else
+%      \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
+%    \fi%
+%    \end{minipage}\par}{}%
   \endgroup\medskip
 }
 
 \newcommand{\makesidebarheader}{
-    {\large\bfseries\color{accent}\@tagline\par}
-    \medskip
-    {\footnotesize\bfseries\@personalinfo\par}
+%    {\large\bfseries\color{accent}\@tagline\par}
+%    \medskip
+    {\large\bfseries\@personalinfo\par}
 }
 
 \renewenvironment{quote}{\color{accent}\itshape\large}{\par}
