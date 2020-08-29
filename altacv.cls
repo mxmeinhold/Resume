@@ -101,7 +101,7 @@
     \vspace{1.5em}
         {\fontsize{30}{9}\bfseries\MakeUppercase{\@name}\par}
     %\vspace{-.87em}
-    \vspace{-9pt}
+    \vspace{-5.5pt}
 %    \medskip
 %    {\large\bfseries\color{accent}\@tagline\par}
 %    \medskip
@@ -146,10 +146,10 @@
   \smallskip
   {\large\color{emphasis}#1\par}
   \smallskip
-  \textbf{\color{accent}#2}\par
-  \smallskip
+  \makebox[0.5\linewidth][l]{\textbf{\color{accent}#2}}
   \ifstrequal{#3}{}{}{\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#3}%
-  \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}\par}
+  %\ifstrequal{#4}{}{}{\makebox[0.25\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}\par}
+  \par}
   \medskip
 }
 
